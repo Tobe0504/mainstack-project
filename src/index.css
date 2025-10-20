@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Degular";
+  src: url("./assets/fonts/Degular/Degular-Light.otf");
+  font-style: normal;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Degular";
+  src: url("./assets/fonts/Degular/Degular-Regular.otf");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Degular";
+  src: url("./assets/fonts/Degular/Degular-Medium.otf");
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Degular";
+  src: url("./assets/fonts/Degular/Degular-Semibold.otf");
+  font-style: normal;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Degular";
+  src: url("./assets/fonts/Degular/Degular-Bold.otf");
+  font-style: normal;
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Degular";
+  src: url("./assets/fonts/Degular/Degular-Black.otf");
+  font-style: normal;
+  font-weight: 800;
+}
+
+:root {
+  font-family: "Degular", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: light dark;
+  color: #131316;
+  background-color: #ffffff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@theme {
+  --font-sans: "Degular";
+
+  /* Colors */
+  --color-mainstack-primary-black: #131316;
+
+  --color-mainstack-primary-white: #fff;
+
+  --color-mainstack-primary-gray: #56616b;
+  --color-mainstack-secondary-gray: #eff1f6;
+  --color-mainstack-tertiary-gray: #888f95;
+  --color-mainstack-tertiary-gray-200: #d9d9d9;
+
+  --color-mainstack-primary-green: #e3fcf2;
+  --color-mainstack-secondary-green: #0ea163;
+
+  --color-mainstack-primary-red: #f9e3e0;
+  --color-mainstack-secondary-red: #961100;
+
+  --color-mainstack-primary-gold: #a77a07;
+
+  --shadow-mainstack-main: 0px 2px 4px 0px #2d3b430d, 0px 2px 6px 0px #2d3b430f;
+  --shadow-mainstack-secondary: 0px 6px 12px 0px #5c738314,
+    0px 4px 8px 0px #5c738314;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+/* Custom classes */
+.two-sec-transition {
+  transition: all 0.2s ease-in-out;
+}
+
+.bg-gradient-1 {
+  background: linear-gradient(138.98deg, #5c6670 2.33%, #131316 96.28%);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+.scrollbar-hide {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
